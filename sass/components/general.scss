@@ -4,11 +4,17 @@
   width: 100px;
 }
 
+.yhmac-person{
+  width:13.88888888888889vw;
+  height:43.16138114209828vh;
+}
 
-.yhmac-person--selected{
+.yhmac-person.selected{
   height:86.32138114209828vh;
   width:13.88888888888889vw;
 }
+
+
 
 img.fit{
   height: 100%;
@@ -16,7 +22,32 @@ img.fit{
   object-fit: cover;
 }
 
-.grid{float: right;}
+.grid{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 50px;
+  .outer{
+    .table{
+      ul{
+        display: flex;
+        align-items: flex-end;
+         justify-content: center;
+         width: 100%;
+         margin: 0;
+         padding: 2;
+
+        li{
+          display: block;
+           flex: 0 1 auto; /* Default */
+           list-style-type: none;
+           background: #fafafa;
+           padding: 5px;
+        }
+      }
+    }
+  }
+}
 
 
 .fade{animation:fading 1s}@keyframes fading{from{opacity:0}to{opacity:1}}

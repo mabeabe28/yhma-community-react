@@ -15,7 +15,10 @@ class communityGrid extends Component {
   }
 
   handleClick(id){
-    this.setState({selected:id});
+    if(id.yhmac_id !== this.state.selected.yhmac_id)
+      this.setState({selected:id});
+    else
+      this.setState({selected:{}});
   }
 
   render(props) {
@@ -23,16 +26,21 @@ class communityGrid extends Component {
     return (
       <div>
         <div class="grid">
-        {this.props.data.map((person, i) => (
-
-            <div key={i} >
-              <Person
-                person={person}
-                handleClick={this.handleClick}
-              />
+          <div className="outer">
+            <div className="table">
+              <ul>
+              {this.props.data.map((person, i) => (
+                  <li key={i}>
+                    <Person
+                      person={person}
+                      handleClick={this.handleClick}
+                      selected={this.state.selected}
+                    />
+                  </li>
+              ))}
+              </ul>
             </div>
-
-        ))}
+          </div>
         </div>
         {(this.state.selected.yhmac_id !== undefined) && (
           <div>

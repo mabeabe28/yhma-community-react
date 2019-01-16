@@ -27,16 +27,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 2, ../sass/components/general.scss */
 .yhmac-person__image { height: 100px; width: 100px; }
 
-/* line 8, ../sass/components/general.scss */
-.yhmac-person--selected { height: 86.32138114209828vh; width: 13.88888888888889vw; }
+/* line 7, ../sass/components/general.scss */
+.yhmac-person { width: 13.88888888888889vw; height: 43.16138114209828vh; }
 
-/* line 13, ../sass/components/general.scss */
-img.fit { height: 100%; width: 100%; object-fit: cover; }
+/* line 12, ../sass/components/general.scss */
+.yhmac-person.selected { height: 86.32138114209828vh; width: 13.88888888888889vw; }
 
 /* line 19, ../sass/components/general.scss */
-.grid { float: right; }
+img.fit { height: 100%; width: 100%; object-fit: cover; }
 
-/* line 22, ../sass/components/general.scss */
+/* line 25, ../sass/components/general.scss */
+.grid { bottom: 0; position: absolute; width: 100%; padding-bottom: 50px; }
+/* line 32, ../sass/components/general.scss */
+.grid .outer .table ul { display: flex; align-items: flex-end; justify-content: center; width: 100%; margin: 0; padding: 2; }
+/* line 40, ../sass/components/general.scss */
+.grid .outer .table ul li { display: block; flex: 0 1 auto; /* Default */ list-style-type: none; background: #fafafa; padding: 5px; }
+
+/* line 53, ../sass/components/general.scss */
 .fade { animation: fading 1s; }
 
 @keyframes fading { from { opacity: 0; }
