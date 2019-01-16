@@ -1,0 +1,18 @@
+[
+  {
+    "yhmac_id":1,
+    "name":"Paolo",
+    "yhma_featureWord":"Code",
+    "link":"www.youhadme.at/community/paolo",
+    "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/05/28661469_10156401709473825_4353236893067596877_n.jpg",
+    "description":"Paolo is a Genius"
+  },
+  {
+    "yhmac_id":2,
+    "name":"Hanna",
+    "yhma_featureWord":"Create",
+    "link":"www.youhadme.at/community/hanna",
+    "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/08/IMG_20161027_195531.jpg",
+    "description":"Hanna is a Sexy"
+  }
+]

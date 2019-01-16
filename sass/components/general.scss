@@ -1,0 +1,22 @@
+
+.yhmac-person__image{
+  height: 100px;
+  width: 100px;
+}
+
+
+.yhmac-person--selected{
+  height:86.32138114209828vh;
+  width:13.88888888888889vw;
+}
+
+img.fit{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid{float: right;}
+
+
+.fade{animation:fading 1s}@keyframes fading{from{opacity:0}to{opacity:1}}
