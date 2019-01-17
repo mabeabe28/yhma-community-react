@@ -1,24 +1,21 @@
-/* line 2, ../../sass/components/general.scss */
+/* line 4, ../../sass/components/general.scss */
 .yhmac-person__image { height: 100px; width: 100px; }
 
-/* line 7, ../../sass/components/general.scss */
-.yhmac-person { width: 13.88888888888889vw; height: 43.16138114209828vh; }
+/* line 9, ../../sass/components/general.scss */
+.yhmac-person { width: 11.88888888888889vw; height: 43.16138114209828vh; transition: 0.4s ease-in; filter: grayscale(100%); }
 
-/* line 12, ../../sass/components/general.scss */
-.yhmac-person.selected { height: 86.32138114209828vh; width: 13.88888888888889vw; }
-
-/* line 19, ../../sass/components/general.scss */
-img.fit { height: 100%; width: 100%; object-fit: cover; }
+/* line 16, ../../sass/components/general.scss */
+.yhmac-person.selected { height: 86.32138114209828vh; width: 20.88888888888889vw; transition: 0.4s ease-in; filter: grayscale(0%); }
 
 /* line 25, ../../sass/components/general.scss */
+img.fit { height: 100%; width: 100%; object-fit: cover; }
+
+/* line 31, ../../sass/components/general.scss */
 .grid { bottom: 0; position: absolute; width: 100%; padding-bottom: 50px; }
-/* line 32, ../../sass/components/general.scss */
+/* line 38, ../../sass/components/general.scss */
 .grid .outer .table ul { display: flex; align-items: flex-end; justify-content: center; width: 100%; margin: 0; padding: 2; }
-/* line 40, ../../sass/components/general.scss */
-.grid .outer .table ul li { display: block; flex: 0 1 auto; /* Default */ list-style-type: none; background: #fafafa; padding: 5px; }
+/* line 46, ../../sass/components/general.scss */
+.grid .outer .table ul li { display: block; flex: 0 1 auto; /* Default */ list-style-type: none; padding: 5px; }
 
-/* line 53, ../../sass/components/general.scss */
-.fade { animation: fading 1s; }
-
-@keyframes fading { from { opacity: 0; }
-  to { opacity: 1; } }
+/* line 59, ../../sass/components/general.scss */
+.person-text { font-size: 72px; color: white; font-family: "Montserrat"; font-weight: 800 Black; }

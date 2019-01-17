@@ -14,5 +14,19 @@
     "link":"www.youhadme.at/community/hanna",
     "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/08/IMG_20161027_195531.jpg",
     "description":"Hanna is a Sexy"
+  },{
+    "yhmac_id":3,
+    "name":"Grace",
+    "yhma_featureWord":"Create",
+    "link":"www.youhadme.at/community/grace",
+    "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/06/G1-1620x1080.jpg",
+    "description":"Hey Grace"
+  },{
+    "yhmac_id":4,
+    "name":"Leonard",
+    "yhma_featureWord":"Code",
+    "link":"www.youhadme.at/community/leonard",
+    "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/06/DSC03966-720x1080.jpg",
+    "description":"Hey Len"
   }
 ]

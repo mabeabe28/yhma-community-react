@@ -10,8 +10,11 @@ class Person extends Component {
       selectedClass = "yhmac-person selected";
     }
     return (
+      <div>
+      {/*<div className="person-text">{personObj.name}</div>*/}
       <div className={selectedClass} onClick={() => this.props.handleClick(personObj)}>
         <img className="yhmac-person__image fit" src={personObj.user_photo} alt={personObj.name} />
+      </div>
       </div>
     );
   }
