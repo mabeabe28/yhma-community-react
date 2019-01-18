@@ -24,13 +24,13 @@ class communityGrid extends Component {
   }
 
   render(props) {
-    //console.log(this.props);
+    console.log(this);
     return (
       <div>
-        <div className="grid">
-              <ul>
+        <div className="yhmac-grid">
+              <ul className="gridWrapper">
               {this.props.data.map((person, i) => (
-                  <li key={i}>
+                  <li key={i} className="gridItem">
                     <Person
                       person={person}
                       handleClick={this.handleClick}
@@ -41,14 +41,11 @@ class communityGrid extends Component {
               ))}
               </ul>
         </div>
-          <div>
-            <SelectedPerson
-              person={this.state.selected}
-            />
-          </div>
-
-
-
+        <div className="yhmac-selected">
+          <SelectedPerson
+            person={this.state.selected}
+          />
+        </div>
       </div>
     );
   }

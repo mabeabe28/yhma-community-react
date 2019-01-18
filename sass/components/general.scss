@@ -1,134 +1,159 @@
 body{
   //background: rgb(35,35,35);
 }
-.yhmac-person__image{
-  height: 100px;
-  width: 100px;
-}
 
-.yhmac-person{
-  width:11.88888888888889vw;
-  height:33.16138114209828vh;
-  transition: 0.4s ease-in;
-  filter: grayscale(100%);
-}
+.yhmac-app{
 
-.yhmac-person.selected{
-  height:56.32138114209828vh;
-  //width:17.88888888888889vw;
-  transition: 0.4s ease-in;
-  filter: grayscale(0%);
-}
-
-.yhmac-person.hide{
-  //transition: 1s ease-in;
-  //opacity: 0;
-}
-
-
-
-img.fit{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.grid{
-
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  //padding-bottom: 50px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-      ul{
-        align-items: center;
-        display: flex;
-        overflow: scroll;
-        //margin-right: 20px;
-        height: 100%;
-        width: 70%;
-        li{
-            margin: 5px;
-        }
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-      }
-}
-
-.yhmac-person-text__container{
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  margin: 50px;
-
-  .yhmac-person-text.selected{
-    font-size: 60px;
-    display: inline-block;
+  /*YHMAC MAIN GRID*/
+  .yhmac-grid{
+    overflow: hidden;
     position: absolute;
-  }
-}
-
-
-.reveal-text {
-  position: relative;
-  overflow: hidden;
-
-  h1 {
-    font-family: Montserrat;
-    font-size: 5vw;
-    line-height: 1;
-    margin: 0;
-    padding: 1.25rem 2rem;
-    color: black;
-    font-weight: 900;
-    text-transform: uppercase;
-    animation: fadeIn 0s 0.2s;
-    animation-fill-mode: backwards;
-  }
-
-  &::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
-    background: black;
-    transform: translateX(-100%);
-    animation: secondaryImageOverlayIn 0.2s 0s, secondaryImageOverlayOut 0.2s 0.2s;
-    animation-fill-mode: both;
+    //padding-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    ul.gridWrapper {
+      align-items: center;
+      display: flex;
+      overflow: scroll;
+      //margin-right: 20px;
+      height: 100%;
+      width: 65%;
+
+      @media screen and (orientation:portrait) {
+        width: 100%;
+      }
+
+      li.gridItem {
+        margin: 5px;
+
+        .yhmac-person{
+          width:11.88888888888889vw;
+          height:33.16138114209828vh;
+          transition: 0.4s ease-in;
+          filter: grayscale(60%);
+          @media screen and (orientation:portrait) {
+            width: 70vw;
+            height:50.16138114209828vh;
+          }
+          img.fit{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+
+          &.selected{
+            height:56.32138114209828vh;
+            //width:17.88888888888889vw;
+            transition: 0.4s ease-in;
+            filter: grayscale(0%);
+
+            @media screen and (orientation:portrait) {
+              width: 70vw;
+              height:64.32138114209828vh;
+            }
+          }
+
+          &.not-selected{
+            //transition: 1s ease-in;
+            opacity: 0.4;
+          }
+        }
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
-}
+  /*YHMAC MAIN TEXT*/
+  .yhmac-selected{
+    .yhmac-selected__container{
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      margin: 40px;
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+      .yhmac-person-text.selected{
+        display: inline-block;
+        position: absolute;
 
-@keyframes secondaryImageOverlayIn {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
+        h1 {
+          font-family: Montserrat;
+          font-size: 5vw;
+          line-height: 1;
+          margin: 0;
+          padding: 1.25rem 2rem;
+          color: black;
+          font-weight: 900;
+          text-transform: uppercase;
+        }
 
-@keyframes secondaryImageOverlayOut {
-  0% {
-    transform: translateX(0);
+        &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
   }
-  100% {
-    transform: translateX(100%);
+
+  /*ANIMATIONS - START*/
+  .reveal-text-animation {
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+      animation: fadeIn 0s 0.2s;
+      animation-fill-mode: backwards;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      transform: translateX(-100%);
+      animation: secondaryImageOverlayIn 0.2s 0s, secondaryImageOverlayOut 0.2s 0.2s;
+      animation-fill-mode: both;
+    }
   }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes secondaryImageOverlayIn {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes secondaryImageOverlayOut {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  /*ANIMATIONS - END*/
+
 }

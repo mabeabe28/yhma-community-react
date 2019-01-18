@@ -24,39 +24,44 @@ a img { border: none; }
 /* line 116, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
-/* line 4, ../sass/components/general.scss */
-.yhmac-person__image { height: 100px; width: 100px; }
-
-/* line 9, ../sass/components/general.scss */
-.yhmac-person { width: 11.88888888888889vw; height: 33.16138114209828vh; transition: 0.4s ease-in; filter: grayscale(100%); }
-
-/* line 16, ../sass/components/general.scss */
-.yhmac-person.selected { height: 56.32138114209828vh; transition: 0.4s ease-in; filter: grayscale(0%); }
-
+/* line 5, ../sass/components/general.scss */
+.yhmac-app { /*YHMAC MAIN GRID*/ /*YHMAC MAIN TEXT*/ /*ANIMATIONS - START*/ /*ANIMATIONS - END*/ }
+/* line 8, ../sass/components/general.scss */
+.yhmac-app .yhmac-grid { overflow: hidden; position: absolute; width: 100%; height: 100%; display: flex; justify-content: flex-end; align-items: flex-end; }
+/* line 18, ../sass/components/general.scss */
+.yhmac-app .yhmac-grid ul.gridWrapper { align-items: center; display: flex; overflow: scroll; height: 100%; width: 65%; }
+@media screen and (orientation: portrait) { /* line 18, ../sass/components/general.scss */
+  .yhmac-app .yhmac-grid ul.gridWrapper { width: 100%; } }
 /* line 30, ../sass/components/general.scss */
-img.fit { height: 100%; width: 100%; object-fit: cover; }
-
-/* line 36, ../sass/components/general.scss */
-.grid { overflow: hidden; position: absolute; width: 100%; height: 100%; display: flex; justify-content: flex-end; align-items: flex-end; }
-/* line 46, ../sass/components/general.scss */
-.grid ul { align-items: center; display: flex; overflow: scroll; height: 100%; width: 70%; }
-/* line 53, ../sass/components/general.scss */
-.grid ul li { margin: 5px; }
-/* line 57, ../sass/components/general.scss */
-.grid ul::-webkit-scrollbar { display: none; }
-
-/* line 63, ../sass/components/general.scss */
-.yhmac-person-text__container { display: flex; align-items: center; height: 100vh; margin: 50px; }
-/* line 69, ../sass/components/general.scss */
-.yhmac-person-text__container .yhmac-person-text.selected { font-size: 60px; display: inline-block; position: absolute; }
-
-/* line 77, ../sass/components/general.scss */
-.reveal-text { position: relative; overflow: hidden; }
+.yhmac-app .yhmac-grid ul.gridWrapper li.gridItem { margin: 5px; }
+/* line 33, ../sass/components/general.scss */
+.yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person { width: 11.88888888888889vw; height: 33.16138114209828vh; transition: 0.4s ease-in; filter: grayscale(60%); }
+@media screen and (orientation: portrait) { /* line 33, ../sass/components/general.scss */
+  .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person { width: 70vw; height: 50.16138114209828vh; } }
+/* line 42, ../sass/components/general.scss */
+.yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person img.fit { height: 100%; width: 100%; object-fit: cover; }
+/* line 48, ../sass/components/general.scss */
+.yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person.selected { height: 56.32138114209828vh; transition: 0.4s ease-in; filter: grayscale(0%); }
+@media screen and (orientation: portrait) { /* line 48, ../sass/components/general.scss */
+  .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person.selected { width: 70vw; height: 64.32138114209828vh; } }
+/* line 60, ../sass/components/general.scss */
+.yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person.not-selected { opacity: 0.4; }
+/* line 67, ../sass/components/general.scss */
+.yhmac-app .yhmac-grid ul.gridWrapper::-webkit-scrollbar { display: none; }
+/* line 75, ../sass/components/general.scss */
+.yhmac-app .yhmac-selected .yhmac-selected__container { display: flex; align-items: center; height: 100vh; margin: 40px; }
 /* line 81, ../sass/components/general.scss */
-.reveal-text h1 { font-family: Montserrat; font-size: 5vw; line-height: 1; margin: 0; padding: 1.25rem 2rem; color: black; font-weight: 900; text-transform: uppercase; animation: fadeIn 0s 0.2s; animation-fill-mode: backwards; }
-/* line 94, ../sass/components/general.scss */
-.reveal-text::after { position: absolute; content: ''; left: 0; top: 0; width: 100%; height: 100%; background: black; transform: translateX(-100%); animation: secondaryImageOverlayIn 0.2s 0s, secondaryImageOverlayOut 0.2s 0.2s; animation-fill-mode: both; }
-
+.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text.selected { display: inline-block; position: absolute; }
+/* line 85, ../sass/components/general.scss */
+.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text.selected h1 { font-family: Montserrat; font-size: 5vw; line-height: 1; margin: 0; padding: 1.25rem 2rem; color: black; font-weight: 900; text-transform: uppercase; }
+/* line 96, ../sass/components/general.scss */
+.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text.selected::after { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+/* line 108, ../sass/components/general.scss */
+.yhmac-app .reveal-text-animation { position: relative; overflow: hidden; }
+/* line 112, ../sass/components/general.scss */
+.yhmac-app .reveal-text-animation h1 { animation: fadeIn 0s 0.2s; animation-fill-mode: backwards; }
+/* line 117, ../sass/components/general.scss */
+.yhmac-app .reveal-text-animation::after { position: absolute; content: ''; left: 0; top: 0; width: 100%; height: 100%; background: black; transform: translateX(-100%); animation: secondaryImageOverlayIn 0.2s 0s, secondaryImageOverlayOut 0.2s 0.2s; animation-fill-mode: both; }
 @keyframes fadeIn { 0% { opacity: 0; }
   100% { opacity: 1; } }
 @keyframes secondaryImageOverlayIn { 0% { width: 0; }
