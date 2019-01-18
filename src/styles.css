@@ -53,7 +53,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 81, ../sass/components/general.scss */
 .yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text.selected { display: inline-block; position: absolute; }
 /* line 85, ../sass/components/general.scss */
-.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text.selected h1 { font-family: Montserrat; font-size: 5vw; line-height: 1; margin: 0; padding: 1.25rem 2rem; color: black; font-weight: 900; text-transform: uppercase; }
+.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text.selected h1 { font-family: "MontserratBlack"; font-size: 5vw; line-height: 1; margin: 0; padding: 1.25rem 2rem; color: black; font-weight: 900; text-transform: uppercase; }
 /* line 96, ../sass/components/general.scss */
 .yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text.selected::after { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 /* line 108, ../sass/components/general.scss */

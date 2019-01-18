@@ -24,7 +24,7 @@ class communityGrid extends Component {
   }
 
   render(props) {
-    console.log(this);
+    //console.log(this);
     return (
       <div>
         <div className="yhmac-grid">
