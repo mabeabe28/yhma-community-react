@@ -28,5 +28,63 @@
     "link":"www.youhadme.at/community/leonard",
     "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/06/DSC03966-720x1080.jpg",
     "description":"Hey Len"
-  }
+  },  {
+      "yhmac_id":11,
+      "name":"Paolo",
+      "yhma_featureWord":"Code",
+      "link":"www.youhadme.at/community/paolo",
+      "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/05/28661469_10156401709473825_4353236893067596877_n.jpg",
+      "description":"Paolo is a Genius"
+    },
+    {
+      "yhmac_id":21,
+      "name":"Hanna",
+      "yhma_featureWord":"Create",
+      "link":"www.youhadme.at/community/hanna",
+      "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/08/IMG_20161027_195531.jpg",
+      "description":"Hanna is a Sexy"
+    },{
+      "yhmac_id":31,
+      "name":"Grace",
+      "yhma_featureWord":"Create",
+      "link":"www.youhadme.at/community/grace",
+      "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/06/G1-1620x1080.jpg",
+      "description":"Hey Grace"
+    },{
+      "yhmac_id":41,
+      "name":"Leonard",
+      "yhma_featureWord":"Code",
+      "link":"www.youhadme.at/community/leonard",
+      "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/06/DSC03966-720x1080.jpg",
+      "description":"Hey Len"
+    },  {
+        "yhmac_id":12,
+        "name":"Paolo",
+        "yhma_featureWord":"Code",
+        "link":"www.youhadme.at/community/paolo",
+        "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/05/28661469_10156401709473825_4353236893067596877_n.jpg",
+        "description":"Paolo is a Genius"
+      },
+      {
+        "yhmac_id":22,
+        "name":"Hanna",
+        "yhma_featureWord":"Create",
+        "link":"www.youhadme.at/community/hanna",
+        "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/08/IMG_20161027_195531.jpg",
+        "description":"Hanna is a Sexy"
+      },{
+        "yhmac_id":32,
+        "name":"Grace",
+        "yhma_featureWord":"Create",
+        "link":"www.youhadme.at/community/grace",
+        "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/06/G1-1620x1080.jpg",
+        "description":"Hey Grace"
+      },{
+        "yhmac_id":42,
+        "name":"Leonard",
+        "yhma_featureWord":"Code",
+        "link":"www.youhadme.at/community/leonard",
+        "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/06/DSC03966-720x1080.jpg",
+        "description":"Hey Len"
+      }
 ]
