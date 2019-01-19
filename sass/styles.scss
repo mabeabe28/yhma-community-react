@@ -1,8 +1,14 @@
-@import "compass";
-@import "compass/reset";
+.yhmac-app{
 
 
+@import "components/grid";
+@import "components/personInfo";
+@import "components/gridAnimations";
 
-//buttons
-@import "components/general";
+
 //fonts
+}
+
+#YHMAC-root {
+  margin-top: -50px;
+}
