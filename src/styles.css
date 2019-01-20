@@ -39,7 +39,7 @@
 /* line 48, ../sass/components/_personInfo.scss */
 .yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .yhmac-person-text.selected::after { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 /* line 57, ../sass/components/_personInfo.scss */
-.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .desc { font-family: "MontserratRegular"; margin: 20px; background-color: white; font-size: 2vw; padding: 0.5rem 2rem; color: black; }
+.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .desc { font-family: "MontserratRegular"; margin: 20px; background-color: white; font-size: 2vw; padding: 0.5rem 2rem; color: black; text-align: justify; line-height: 1; }
 @media screen and (orientation: portrait) { /* line 57, ../sass/components/_personInfo.scss */
   .yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .desc { font-size: 4vw; } }
 /* line 3, ../sass/components/_gridAnimations.scss */
