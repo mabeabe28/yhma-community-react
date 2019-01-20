@@ -14,7 +14,7 @@ class Person extends Component {
     }
 
     return (
-      <div className={`yhmac-person ${selectedClass}`} onClick={() => this.props.handleClick(personObj)} >
+      <div id={`person-${personObj.yhmac_id}`} className={`yhmac-person ${selectedClass}`} onClick={() => this.props.handleClick(personObj)} >
         <img className="yhmac-person__image fit" src={personObj.user_photo} alt={personObj.name} />
       </div>
     );

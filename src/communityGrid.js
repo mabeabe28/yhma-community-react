@@ -17,6 +17,7 @@ class communityGrid extends Component {
   handleClick(id){
     if(id.yhmac_id !== this.state.selected.yhmac_id){
       this.setState({selected:id});
+      document.getElementById(`person-${id.yhmac_id}`).scrollIntoView({behavior: "smooth", block: "center"});
     }
     else{
       this.setState({selected:{}});
