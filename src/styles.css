@@ -13,18 +13,18 @@
 @media screen and (orientation: portrait) { /* line 29, ../sass/components/_grid.scss */
   .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person { width: 70vw; height: 50.16138114209828vh; } }
 /* line 41, ../sass/components/_grid.scss */
-.yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person:hover { cursor: pointer; }
-/* line 45, ../sass/components/_grid.scss */
+.yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person:hover { cursor: pointer; transition: 0.4s ease-in; filter: grayscale(30%) contrast(50%); -webkit-filter: grayscale(30%) contrast(50%); }
+/* line 48, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person .yhmac-person__image { height: 100%; width: 100%; object-fit: cover; }
-/* line 51, ../sass/components/_grid.scss */
+/* line 54, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person.selected { height: 56.32138114209828vh; width: 17.88888888888889vw; transition: 0.4s ease-in; filter: grayscale(0%); -webkit-filter: grayscale(0%); }
-@media screen and (orientation: portrait) { /* line 51, ../sass/components/_grid.scss */
+@media screen and (orientation: portrait) { /* line 54, ../sass/components/_grid.scss */
   .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person.selected { width: 70vw; height: 74.32138114209828vh; } }
-/* line 64, ../sass/components/_grid.scss */
+/* line 67, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person.not-selected { opacity: 0.4; }
-/* line 70, ../sass/components/_grid.scss */
+/* line 73, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person .comingsoon { filter: grayscale(100%); }
-/* line 76, ../sass/components/_grid.scss */
+/* line 79, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper::-webkit-scrollbar { display: none; }
 /* line 3, ../sass/components/_issueNo.scss */
 .yhmac-app .yhmac-issue { width: 30%; margin: 20px; position: absolute; top: 0; right: 0; z-index: -1; }

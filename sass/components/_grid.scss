@@ -40,6 +40,9 @@
 
           &:hover{
             cursor: pointer;
+            transition: 0.4s ease-in;
+            filter: grayscale(30%) contrast(50%);
+            -webkit-filter: grayscale(30%) contrast(50%);
           }
 
           .yhmac-person__image{
