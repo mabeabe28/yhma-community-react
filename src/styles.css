@@ -45,9 +45,9 @@
 /* line 3, ../sass/components/_gridAnimations.scss */
 .yhmac-app .reveal-text-animation { position: relative; overflow: hidden; }
 /* line 7, ../sass/components/_gridAnimations.scss */
-.yhmac-app .reveal-text-animation h1, .yhmac-app .reveal-text-animation .desc { animation: fadeIn 0s 0.2s; animation-fill-mode: backwards; }
+.yhmac-app .reveal-text-animation h1, .yhmac-app .reveal-text-animation .desc { animation: fadeIn 0s 0.4s; animation-fill-mode: backwards; }
 /* line 12, ../sass/components/_gridAnimations.scss */
-.yhmac-app .reveal-text-animation::after { position: absolute; content: ''; left: 0; top: 0; width: 100%; height: 100%; background: black; transform: translateX(-100%); animation: secondaryImageOverlayIn 0.2s 0s, secondaryImageOverlayOut 0.2s 0.2s; animation-fill-mode: both; }
+.yhmac-app .reveal-text-animation::after { position: absolute; content: ''; left: 0; top: 0; width: 100%; height: 100%; background: black; transform: translateX(-100%); animation: secondaryImageOverlayIn 0.4s 0s, secondaryImageOverlayOut 0.4s 0.4s; animation-fill-mode: both; }
 @keyframes fadeIn { 0% { opacity: 0; }
   100% { opacity: 1; } }
 @keyframes secondaryImageOverlayIn { 0% { width: 0; }

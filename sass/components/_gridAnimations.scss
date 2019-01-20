@@ -5,7 +5,7 @@
     overflow: hidden;
 
     h1,.desc {
-      animation: fadeIn 0s 0.2s;
+      animation: fadeIn 0s 0.4s;
       animation-fill-mode: backwards;
     }
 
@@ -18,7 +18,7 @@
       height: 100%;
       background: black;
       transform: translateX(-100%);
-      animation: secondaryImageOverlayIn 0.2s 0s, secondaryImageOverlayOut 0.2s 0.2s;
+      animation: secondaryImageOverlayIn 0.4s 0s, secondaryImageOverlayOut 0.4s 0.4s;
       animation-fill-mode: both;
     }
 
