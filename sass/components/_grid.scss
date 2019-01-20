@@ -31,11 +31,18 @@
           height:33.16138114209828vh;
           transition: 0.4s ease-in;
           filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+
           @media screen and (orientation:portrait) {
             width: 70vw;
             height:50.16138114209828vh;
           }
-          img.fit{
+
+          &:hover{
+            cursor: pointer;
+          }
+
+          .yhmac-person__image{
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -46,6 +53,7 @@
             width:17.88888888888889vw;
             transition: 0.4s ease-in;
             filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
 
             @media screen and (orientation:portrait) {
               width: 70vw;
@@ -57,6 +65,10 @@
             //transition: 1s ease-in;
             opacity: 0.4;
 
+          }
+
+          .comingsoon{
+            filter: grayscale(100%);
           }
         }
       }

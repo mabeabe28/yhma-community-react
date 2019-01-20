@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import Person from './Person';
 import SelectedPerson from './SelectedPerson';
+import IssueNo from './IssueNo';
+
 
 class communityGrid extends Component {
   constructor(props){
@@ -41,6 +43,11 @@ class communityGrid extends Component {
                   </li>
               ))}
               </ul>
+        </div>
+        <div className="yhmac-issue">
+          <IssueNo
+            person={this.state.selected}
+          />
         </div>
         <div className="yhmac-selected">
           <SelectedPerson
