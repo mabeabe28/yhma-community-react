@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
 
-    h1 {
+    h1,.desc {
       animation: fadeIn 0s 0.2s;
       animation-fill-mode: backwards;
     }
@@ -21,6 +21,8 @@
       animation: secondaryImageOverlayIn 0.2s 0s, secondaryImageOverlayOut 0.2s 0.2s;
       animation-fill-mode: both;
     }
+
+
   }
 
   @keyframes fadeIn {

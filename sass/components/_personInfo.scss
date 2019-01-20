@@ -4,33 +4,70 @@
     .yhmac-selected__container{
       display: flex;
       align-items: center;
+
+      @media screen and (orientation:landscape) {
+        justify-content: center;
+        width: 35%;
+      }
+      @media screen and (orientation:portrait) {
+        width: 70%;
+        margin-left: 20px;
+
+      }
+
       height: 100vh;
-      margin: 40px;
 
-      .yhmac-person-text.selected{
-        display: inline-block;
-        position: absolute;
+      .yhmac-person-text__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
 
-        h1 {
-          font-family: "MontserratBlack";
-          font-size: 5vw;
-          line-height: 1;
-          margin: 0;
-          padding: 1.25rem 2rem;
+        @media screen and (orientation:portrait) {
+          margin-top: 70%
+        }
+
+
+        .yhmac-person-text.selected{
+          display: inline-block;
+          display: flex;
+
+          h1,h2,h3,h4 {
+            font-family: "MontserratBlack";
+            font-size: 5vw;
+            line-height: 1;
+            margin: 0;
+            padding: 1.25rem 2rem;
+            color: black;
+            font-weight: 900;
+            text-transform: uppercase;
+            background-color: white;
+          }
+
+          &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .desc{
+          font-family: "MontserratRegular";
+          margin: 20px;
+          background-color: white;
+          font-size: 2vw;
+          padding: 0.5rem 2rem;
           color: black;
-          font-weight: 900;
-          text-transform: uppercase;
+
+          @media screen and (orientation:portrait) {
+            font-size: 4vw;
+          }
         }
 
-        &::after {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-        }
+
       }
     }
   }
-
-  
