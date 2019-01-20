@@ -7,7 +7,7 @@ class SelectedPerson extends Component {
     const personObj = this.props.person;
 
     let mainText = "YHMA: Community";
-    let description = "Spotlighting individuals with a cause, creative and talented members from the community.";
+    let description = "Spotlighting talented members from the community; Artists, Creatives and those with a cause.";
 
     if(this.props.person.yhmac_id !== undefined){
       mainText = personObj.name;

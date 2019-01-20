@@ -3,7 +3,7 @@
 /* line 4, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid { overflow: hidden; position: absolute; width: 100%; height: 100%; display: flex; justify-content: flex-end; align-items: flex-end; }
 /* line 14, ../sass/components/_grid.scss */
-.yhmac-app .yhmac-grid ul.gridWrapper { align-items: center; display: flex; overflow: scroll; height: 100%; width: 65%; }
+.yhmac-app .yhmac-grid ul.gridWrapper { align-items: center; display: flex; overflow: scroll; height: 100%; width: 63%; }
 @media screen and (orientation: portrait) { /* line 14, ../sass/components/_grid.scss */
   .yhmac-app .yhmac-grid ul.gridWrapper { width: 100%; } }
 /* line 26, ../sass/components/_grid.scss */
@@ -63,7 +63,7 @@
 @keyframes secondaryImageOverlayIn { 0% { width: 0; }
   100% { width: 100%; } }
 @keyframes secondaryImageOverlayOut { 0% { transform: translateX(0); }
-  100% { transform: translateX(100%); } }
+  100% { transform: translateX(105%); } }
 /* line 60, ../sass/components/_gridAnimations.scss */
 .yhmac-app .typewriter { overflow: hidden; /* Ensures the content is not revealed until the animation */ border-right: .15em solid orange; /* The typwriter cursor */ white-space: nowrap; /* Keeps the content on a single line */ margin: 0 auto; /* Gives that scrolling effect as the typing happens */ animation: typing 0.4s steps(30, end), blink-caret 1s step-end infinite; }
 @keyframes typing { from { width: 0; }
