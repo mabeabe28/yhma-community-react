@@ -46,5 +46,25 @@
     "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/05/28661469_10156401709473825_4353236893067596877_n.jpg",
     "description":"Featured person coming soon...",
     "comingsoon":true
+  },
+  {
+    "yhmac_id":6,
+    "issueNo":"#005",
+    "name":"Coming Soon",
+    "yhma_featureWord":"community",
+    "link":"www.youhadme.at/community",
+    "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/05/28661469_10156401709473825_4353236893067596877_n.jpg",
+    "description":"Featured person coming soon...",
+    "comingsoon":true
+  },
+  {
+    "yhmac_id":7,
+    "issueNo":"#006",
+    "name":"Coming Soon",
+    "yhma_featureWord":"community",
+    "link":"www.youhadme.at/community",
+    "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/05/28661469_10156401709473825_4353236893067596877_n.jpg",
+    "description":"Featured person coming soon...",
+    "comingsoon":true
   }
 ]

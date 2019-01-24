@@ -12,12 +12,15 @@
     align-items: flex-end;
 
     ul.gridWrapper {
+      list-style: none;
       align-items: center;
       display: flex;
       overflow: scroll;
       //margin-right: 20px;
       height: 100%;
-      width: 63%;
+      width: 65%;
+      scroll-behavior: smooth;
+      padding: 0;
 
       @media screen and (orientation:portrait) {
         width: 100%;
@@ -25,7 +28,7 @@
 
       li.gridItem {
         margin: 5px;
-
+        z-index: 10;
         .yhmac-person{
           width:11.88888888888889vw;
           height:33.16138114209828vh;
@@ -80,4 +83,42 @@
         display: none;
       }
     }
+  }
+
+
+  .yhmac-grid__scroll{
+    position: absolute;
+    width: 65%;
+    z-index: 8;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &-button-container{
+      height:33.16138114209828vh;
+      padding: 0;
+      width: 100%;
+      .yhmac-grid__scroll-button{
+        background-color: white;
+        margin-top: 33.16138114209828vh;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        //transition: 0.1s ease-in;
+
+        &:hover{
+          cursor: pointer;
+          //transform: scale(1.2);
+          //transition: 0.1s ease-in;
+        }
+        &--left{
+          float:left;
+        }
+        &--right{
+          float:right;
+          margin-right: 15px;
+        }
+      }
+    }
+
   }
