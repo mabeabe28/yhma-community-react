@@ -61,7 +61,6 @@ class communityGrid extends Component {
       this.gridWindowRef.current.scrollLeft -= 400;
   }
   render(props) {
-    console.log(this);
     return (
       <div>
       {this.state.selected.videoBG !== undefined && !isMobile &&

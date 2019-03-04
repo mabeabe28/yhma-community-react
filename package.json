@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://youhadme.at/community",
   "dependencies": {
-    "babel-loader": "^8.0.5",
     "react": "^16.7.0",
     "react-device-detect": "^1.6.2",
     "react-dom": "^16.7.0",
