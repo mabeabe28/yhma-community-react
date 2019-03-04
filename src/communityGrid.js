@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {isMobile} from "react-device-detect";
 
 import Person from './Person';
 import SelectedPerson from './SelectedPerson';
@@ -63,7 +64,7 @@ class communityGrid extends Component {
     console.log(this);
     return (
       <div>
-      {this.state.selected.videoBG !== undefined &&
+      {this.state.selected.videoBG !== undefined && !isMobile &&
         <video autoPlay muted preload="auto" id="videoBG" className="video-bg">
           <source src={`${this.state.selected.videoBG}#t=0.2`} type="video/mp4" poster={this.state.selected.user_photo}/>
         </video>
