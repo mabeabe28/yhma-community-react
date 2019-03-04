@@ -1,6 +1,17 @@
 [
   {
     "yhmac_id":1,
+    "issueNo":"#001",
+    "name":"Coming Soon",
+    "yhma_featureWord":"community",
+    "link":"www.youhadme.at/community",
+    "user_photo": "http://www.youhadme.at/wp-content/uploads/2019/03/DSC05136-1.jpg",
+    "description":"Claire. Along side being a mental health student, she is also a trained Actress, Musician, Dancer and Model.",
+    "videoBG":"http://www.youhadme.at/wp-content/uploads/2019/03/VideoBG.mov",
+    "comingsoon":true
+  },
+  {
+    "yhmac_id":2,
     "issueNo":"#000",
     "name":"Coming Soon",
     "yhma_featureWord":"community",
@@ -10,8 +21,8 @@
     "comingsoon":true
   },
   {
-    "yhmac_id":2,
-    "issueNo":"#001",
+    "yhmac_id":3,
+    "issueNo":"#000",
     "name":"Coming Soon",
     "yhma_featureWord":"community",
     "link":"www.youhadme.at/community",
@@ -19,8 +30,8 @@
     "description":"Featured person coming soon...",
     "comingsoon":true
   },{
-    "yhmac_id":3,
-    "issueNo":"#002",
+    "yhmac_id":4,
+    "issueNo":"#000",
     "name":"Coming Soon",
     "yhma_featureWord":"community",
     "link":"www.youhadme.at/community",
@@ -28,8 +39,8 @@
     "description":"Featured person coming soon...",
     "comingsoon":true
   },{
-    "yhmac_id":4,
-    "issueNo":"#003",
+    "yhmac_id":5,
+    "issueNo":"#000",
     "name":"Coming Soon",
     "yhma_featureWord":"community",
     "link":"www.youhadme.at/community",
@@ -38,18 +49,8 @@
     "comingsoon":true
   },
   {
-    "yhmac_id":5,
-    "issueNo":"#004",
-    "name":"Coming Soon",
-    "yhma_featureWord":"community",
-    "link":"www.youhadme.at/community",
-    "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/05/28661469_10156401709473825_4353236893067596877_n.jpg",
-    "description":"Featured person coming soon...",
-    "comingsoon":true
-  },
-  {
     "yhmac_id":6,
-    "issueNo":"#005",
+    "issueNo":"#000",
     "name":"Coming Soon",
     "yhma_featureWord":"community",
     "link":"www.youhadme.at/community",
@@ -59,7 +60,17 @@
   },
   {
     "yhmac_id":7,
-    "issueNo":"#006",
+    "issueNo":"#000",
+    "name":"Coming Soon",
+    "yhma_featureWord":"community",
+    "link":"www.youhadme.at/community",
+    "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/05/28661469_10156401709473825_4353236893067596877_n.jpg",
+    "description":"Featured person coming soon...",
+    "comingsoon":true
+  },
+  {
+    "yhmac_id":8,
+    "issueNo":"#000",
     "name":"Coming Soon",
     "yhma_featureWord":"community",
     "link":"www.youhadme.at/community",

@@ -1,51 +1,61 @@
 /* line 1, ../sass/styles.scss */
 .yhmac-app { /*YHMAC MAIN GRID*/ /*YHMAC MAIN TEXT*/ /*YHMAC MAIN TEXT*/ /*ANIMATIONS - START*/ /*ANIMATIONS - END*/ /* DEMO-SPECIFIC STYLES */ /* The typing effect */ /* The typewriter cursor effect */ }
-/* line 4, ../sass/components/_grid.scss */
+/* line 2, ../sass/components/_grid.scss */
+.yhmac-app #videoBG { object-fit: cover; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: -1; -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); }
+@media screen and (orientation: portrait) { /* line 2, ../sass/components/_grid.scss */
+  .yhmac-app #videoBG { display: none; } }
+@keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+/* line 28, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid { overflow: hidden; position: absolute; width: 100%; height: 100%; display: flex; justify-content: flex-end; align-items: flex-end; }
-/* line 14, ../sass/components/_grid.scss */
+/* line 38, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper { list-style: none; align-items: center; display: flex; overflow: scroll; height: 100%; width: 65%; scroll-behavior: smooth; padding: 0; }
-@media screen and (orientation: portrait) { /* line 14, ../sass/components/_grid.scss */
+@media screen and (orientation: portrait) { /* line 38, ../sass/components/_grid.scss */
   .yhmac-app .yhmac-grid ul.gridWrapper { width: 100%; } }
-/* line 29, ../sass/components/_grid.scss */
+/* line 53, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem { margin: 5px; z-index: 10; }
-/* line 32, ../sass/components/_grid.scss */
+/* line 56, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person { width: 11.88888888888889vw; height: 33.16138114209828vh; transition: 0.4s ease-in; filter: grayscale(100%); -webkit-filter: grayscale(100%); }
-@media screen and (orientation: portrait) { /* line 32, ../sass/components/_grid.scss */
+@media screen and (orientation: portrait) { /* line 56, ../sass/components/_grid.scss */
   .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person { width: 70vw; height: 50.16138114209828vh; } }
-/* line 44, ../sass/components/_grid.scss */
+/* line 68, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person:hover { cursor: pointer; transition: 0.4s ease-in; filter: grayscale(30%) contrast(50%); -webkit-filter: grayscale(30%) contrast(50%); }
-/* line 51, ../sass/components/_grid.scss */
+/* line 75, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person .yhmac-person__image { height: 100%; width: 100%; object-fit: cover; }
-/* line 57, ../sass/components/_grid.scss */
+/* line 81, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person.selected { height: 56.32138114209828vh; width: 17.88888888888889vw; transition: 0.4s ease-in; filter: grayscale(0%); -webkit-filter: grayscale(0%); }
-@media screen and (orientation: portrait) { /* line 57, ../sass/components/_grid.scss */
+@media screen and (orientation: portrait) { /* line 81, ../sass/components/_grid.scss */
   .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person.selected { width: 70vw; height: 74.32138114209828vh; } }
-/* line 70, ../sass/components/_grid.scss */
+/* line 94, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person.not-selected { opacity: 0.4; }
-/* line 76, ../sass/components/_grid.scss */
-.yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person .comingsoon { filter: grayscale(100%); }
-/* line 82, ../sass/components/_grid.scss */
-.yhmac-app .yhmac-grid ul.gridWrapper::-webkit-scrollbar { display: none; }
-/* line 89, ../sass/components/_grid.scss */
-.yhmac-app .yhmac-grid__scroll { position: absolute; width: 65%; z-index: 8; height: 100%; display: flex; align-items: center; }
-@media screen and (orientation: portrait) { /* line 89, ../sass/components/_grid.scss */
-  .yhmac-app .yhmac-grid__scroll { display: none; } }
 /* line 100, ../sass/components/_grid.scss */
-.yhmac-app .yhmac-grid__scroll-button-container { height: 33.16138114209828vh; padding: 0; width: 100%; }
-/* line 104, ../sass/components/_grid.scss */
-.yhmac-app .yhmac-grid__scroll-button-container .yhmac-grid__scroll-button { background-color: white; margin-top: 33.16138114209828vh; width: 30px; height: 30px; display: inline-block; }
+.yhmac-app .yhmac-grid ul.gridWrapper li.gridItem .yhmac-person .comingsoon { filter: grayscale(100%); }
+/* line 106, ../sass/components/_grid.scss */
+.yhmac-app .yhmac-grid ul.gridWrapper::-webkit-scrollbar { display: none; }
 /* line 113, ../sass/components/_grid.scss */
+.yhmac-app .yhmac-grid__scroll { position: absolute; width: 65%; z-index: 8; height: 100%; display: flex; align-items: center; }
+@media screen and (orientation: portrait) { /* line 113, ../sass/components/_grid.scss */
+  .yhmac-app .yhmac-grid__scroll { display: none; } }
+/* line 124, ../sass/components/_grid.scss */
+.yhmac-app .yhmac-grid__scroll-button-container { height: 33.16138114209828vh; padding: 0; width: 100%; }
+/* line 128, ../sass/components/_grid.scss */
+.yhmac-app .yhmac-grid__scroll-button-container .yhmac-grid__scroll-button { background-color: white; margin-top: 33.16138114209828vh; width: 30px; height: 30px; display: inline-block; }
+/* line 137, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid__scroll-button-container .yhmac-grid__scroll-button:hover { cursor: pointer; }
-/* line 118, ../sass/components/_grid.scss */
+/* line 142, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid__scroll-button-container .yhmac-grid__scroll-button--left { float: left; }
-/* line 121, ../sass/components/_grid.scss */
+/* line 145, ../sass/components/_grid.scss */
 .yhmac-app .yhmac-grid__scroll-button-container .yhmac-grid__scroll-button--right { float: right; margin-right: 15px; }
 /* line 3, ../sass/components/_issueNo.scss */
 .yhmac-app .yhmac-issue { width: 30%; margin: 20px; position: absolute; top: 0; right: 0; z-index: -1; }
 /* line 10, ../sass/components/_issueNo.scss */
 .yhmac-app .yhmac-issue .yhmac-issue__container { width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; }
 /* line 17, ../sass/components/_issueNo.scss */
-.yhmac-app .yhmac-issue .yhmac-issue__container .yhmac-issue__number { margin: 0; font-family: "MontserratBlack"; font-size: 10vw; background-color: white; font-weight: bold; }
+.yhmac-app .yhmac-issue .yhmac-issue__container .yhmac-issue__number { margin: 0; font-family: "MontserratBlack"; font-size: 10vw; font-weight: bold; background-color: white; }
+/* line 24, ../sass/components/_issueNo.scss */
+.yhmac-app .yhmac-issue .yhmac-issue__container .yhmac-issue__number--video { color: white; background-color: transparent; }
+@media screen and (orientation: portrait) { /* line 24, ../sass/components/_issueNo.scss */
+  .yhmac-app .yhmac-issue .yhmac-issue__container .yhmac-issue__number--video { color: black; background-color: white; } }
 /* line 4, ../sass/components/_personInfo.scss */
 .yhmac-app .yhmac-selected .yhmac-selected__container { display: flex; align-items: center; height: 100vh; }
 @media screen and (orientation: landscape) { /* line 4, ../sass/components/_personInfo.scss */

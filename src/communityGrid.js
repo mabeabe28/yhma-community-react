@@ -60,9 +60,14 @@ class communityGrid extends Component {
       this.gridWindowRef.current.scrollLeft -= 400;
   }
   render(props) {
-    //console.log(this);
+    console.log(this);
     return (
       <div>
+      {this.state.selected.videoBG !== undefined &&
+        <video autoPlay muted preload="auto" id="videoBG" className="video-bg">
+          <source src={`${this.state.selected.videoBG}#t=0.2`} type="video/mp4" poster={this.state.selected.user_photo}/>
+        </video>
+      }
         <div className="yhmac-grid">
               <ul id="gridWindow" className="gridWrapper" ref={this.gridWindowRef}>
               {this.props.data.map((person, i) => (
@@ -78,10 +83,10 @@ class communityGrid extends Component {
               <div className="yhmac-grid__scroll">
                 <div className="yhmac-grid__scroll-button-container">
                 {this.state.showLeftScroll &&
-                  <span className="yhmac-grid__scroll-button yhmac-grid__scroll-button--left" onClick={()=>this.gridScroll('left')}>></span>
+                  <span className="yhmac-grid__scroll-button yhmac-grid__scroll-button--left" onClick={()=>this.gridScroll('left')}>{'<'}</span>
                 }
                 {this.state.showRightScroll &&
-                  <span className="yhmac-grid__scroll-button yhmac-grid__scroll-button--right" onClick={()=>this.gridScroll('right')}>></span>
+                  <span className="yhmac-grid__scroll-button yhmac-grid__scroll-button--right" onClick={()=>this.gridScroll('right')}>{'>'}</span>
                 }
                 </div>
               </div>

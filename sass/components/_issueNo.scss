@@ -18,8 +18,19 @@
         margin: 0;
         font-family: "MontserratBlack";
         font-size: 10vw;
-        background-color: white;
         font-weight: bold;
+        background-color: white;
+
+        &--video{
+          color: white;
+          background-color: transparent;
+
+          @media screen and (orientation:portrait) {
+            color: black;
+            background-color: white;
+          }
+        }
       }
+
     }
   }
