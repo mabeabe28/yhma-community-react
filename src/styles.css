@@ -76,6 +76,12 @@
 .yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .desc { font-family: "MontserratRegular"; margin: 20px; background-color: white; font-size: 1.8vw; padding: 0.5rem 2rem; color: black; text-align: justify; line-height: 1; z-index: 100; }
 @media screen and (orientation: portrait) { /* line 59, ../sass/components/_personInfo.scss */
   .yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .desc { font-size: 4vw; } }
+/* line 76, ../sass/components/_personInfo.scss */
+.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .yhmac-person-links { font-weight: bold; text-decoration: none; padding: 5px; }
+/* line 81, ../sass/components/_personInfo.scss */
+.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .yhmac-person-links .videoLink, .yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .yhmac-person-links .postLink { font-family: "MontserratRegular"; margin: 20px; background-color: white; font-size: 1.8vw; padding: 0.5rem 2rem; text-align: justify; line-height: 1; z-index: 100; display: flex; justify-content: center; }
+/* line 96, ../sass/components/_personInfo.scss */
+.yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .yhmac-person-links a, .yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .yhmac-person-links a:visited, .yhmac-app .yhmac-selected .yhmac-selected__container .yhmac-person-text__wrapper .yhmac-person-links a:hover { color: red; text-decoration: none; }
 /* line 3, ../sass/components/_gridAnimations.scss */
 .yhmac-app .reveal-text-animation { position: relative; overflow: hidden; }
 /* line 7, ../sass/components/_gridAnimations.scss */

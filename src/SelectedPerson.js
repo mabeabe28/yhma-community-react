@@ -24,6 +24,20 @@ class SelectedPerson extends Component {
           <div key={`${personObj.yhmac_id}--desc`} className="desc reveal-text-animation">
             {description}
           </div>
+          <div className="yhmac-person-links">
+          {personObj.videoLink &&
+            <div className="videoLink">
+              <br/>
+              <a href={personObj.videoLink}>WATCH VIDEO</a>
+            </div>
+          }
+          {personObj.postLink &&
+            <div className="postLink">
+              <br/>
+              <a href={personObj.postLink}>READ BLOG</a>
+            </div>
+          }
+          </div>
         </div>
 
         {/*<img className="fit" src={personObj.user_photo} alt={personObj.name}/>*/}
