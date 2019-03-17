@@ -77,17 +77,16 @@
           font-weight: bold;
           text-decoration: none;
           padding: 5px;
+          z-index: 100;
+          font-size: 1.8vw;
 
           .videoLink,.postLink{
             font-family: "MontserratRegular";
             margin: 20px;
             background-color: white;
-            font-size: 1.8vw;
             padding: 0.5rem 2rem;
-            text-align: justify;
             line-height: 1;
             z-index: 100;
-
             display: flex;
             justify-content: center;
           }
