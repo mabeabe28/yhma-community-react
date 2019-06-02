@@ -7,13 +7,23 @@
     "link":"www.youhadme.at/community",
     "user_photo": "http://www.youhadme.at/wp-content/uploads/2019/03/DSC05136-1.jpg",
     "description":"Along side studying psychology as a mental health student, Claire is also a trained Actress, Musician, Dancer and Model.",
-    "videoBG":"http://www.youhadme.at/wp-content/uploads/2019/03/VideoBG.mov",
     "videoLink":"https://youtu.be/x-sdY17ZEPE",
     "postLink":"https://www.youhadme.at/community/claire",
-    "comingsoon":true
+    "comingsoon":false
   },
   {
     "yhmac_id":2,
+    "issueNo":"#002",
+    "name":"JERICHO",
+    "yhma_featureWord":"community",
+    "link":"www.youhadme.at/community",
+    "user_photo": "http://www.youhadme.at/wp-content/uploads/2019/06/Screenshot-2019-06-02-at-16.32.07.png",
+    "description":"A Spiritual teacher and a Vegan Business owner.",
+    "videoLink":"https://youtu.be/V5QRGdleB8U",
+    "comingsoon":false
+  },
+  {
+    "yhmac_id":8,
     "issueNo":"#000",
     "name":"Coming Soon",
     "yhma_featureWord":"community",
@@ -67,17 +77,6 @@
   },
   {
     "yhmac_id":7,
-    "issueNo":"#000",
-    "name":"Coming Soon",
-    "yhma_featureWord":"community",
-    "link":"www.youhadme.at/community",
-    "user_photo": "https://www.youhadme.at/wp-content/uploads/2018/05/28661469_10156401709473825_4353236893067596877_n.jpg",
-    "description":"Featured person coming soon...",
-    "videoLink":"",
-    "comingsoon":true
-  },
-  {
-    "yhmac_id":8,
     "issueNo":"#000",
     "name":"Coming Soon",
     "yhma_featureWord":"community",
